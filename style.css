@@ -1,0 +1,243 @@
+body {
+    margin: auto;
+    max-width: 1440px;
+}
+a{
+    text-decoration: none;
+}
+h1, p, a {
+    color: black;
+    margin: 0;
+}
+.flex{
+    display: flex;
+}
+.center{
+    justify-content: center;
+}
+.f-wrap-fd-row{
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+
+
+/*--------ITEMS--------*/
+.item-1 {
+    width: 55%;
+    justify-content:space-between;
+}
+.item-2 {
+    width: 40%;
+}
+.left-side{
+    width: 27%;
+}
+.right-side{
+    background-color:#ffff;
+    border: 2px solid #E3E2E2;
+    width: 70%;
+    align-items: center;
+}
+.img-product:last-child{
+    margin: 0;
+}
+.img-product{
+    background-color:#ffff;
+    border: 2px solid #E3E2E2;
+    padding: 10% 0;
+    margin: 0 0 10% 0;
+}
+.prod{
+    max-width: 100%;
+}
+.prod-main{
+    max-width: 100%;
+}
+
+/*--------Right--------*/
+.wrap{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    line-height: 1;
+}
+.strike{
+    color: black !important;
+    text-decoration-color:red!important;
+    padding-right:5px ;
+}
+.product-small{
+    width: 54px;
+    height: 44px;
+    padding: 20px 10px 20px 0;
+}
+.prod-img{
+    width: 100%;
+    height: 100%;
+    background-size:cover;
+    border: 2px solid #EAE9E9;
+    box-sizing: border-box;
+    padding-right: 8px;
+}
+.prod-img:hover ~ .prod-text-hidden{
+    visibility:visible;
+}
+.prod-text-hidden{
+    font-family: 'Oswald';
+    font-weight: 200;
+    font-size: 1.055vh;
+    visibility: hidden;
+}
+.one{
+    background-image: url('./img/s1.png');
+}
+.two{
+    background-image: url('./img/s2.png');
+}
+.three{
+    background-image: url('./img/s3.png');
+}
+.polycarbonat-info{
+    border-bottom: 2px solid black;
+    justify-content:space-between;
+    padding: 5% 0 2% 0;
+}
+.poly-name, .poly-price{
+    font-family: Oswald;
+    font-size: calc(22px + 6 * (100vw/1440)); 
+    margin: 0;
+}
+.red{
+    color: red;
+}
+
+/*--------------------------------------*/
+.guarantees{
+    width: 60%;
+}
+.guarantee{
+    width: 22.5%;
+    background: #33F0A9;
+    margin: 1%;
+}
+.name-garantee{
+    font-family: Oswald;
+    font-size: 1.5rem;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.garantee-txt{
+    font-family: Helvetica;
+    font-size: 1rem;
+    line-height: 140%;
+    text-align: center;
+}
+
+/*-----------------BUTTONS----------------*/
+.buttons{
+    width: 35%;
+}
+.add, .build{
+    width: 100%;
+    border: none;
+    padding: 4% 0;
+}
+.add-to-card, .build-your-prescr{
+    font-family: Oswald;
+    font-size: 1.68vh;
+    text-transform: uppercase;
+}
+.build-your-prescr{
+    color:#33F0A9 ;
+}
+.add{
+    background: #33F0A9;
+    margin-bottom: 18px;
+    box-shadow: 10px 10px 0 black;
+}
+.build{
+    background: #000000;
+    box-shadow: 10px 10px 0 #33F0A9;
+    color: #33F0A9;
+}
+.build:hover{
+    background: #33F0A9;
+    box-shadow: 10px 10px 0 black;
+    transition: 0.5s;
+}
+.add:hover{
+    background:black;
+    box-shadow: 10px 10px 0 #33F0A9;
+    transition: 0.5s;
+}
+.add-to-card:hover{
+    color: #33F0A9;
+}
+.build-your-prescr:hover{
+    color: black;
+}
+
+
+/*MEDIA*/
+@media (max-width:1440px){
+    body{
+        margin: 0;
+    }
+}
+@media (max-width:1025px){
+    .item-2{
+        min-width: 60%;
+        padding: 2% 0;
+    }
+    .guarantees{
+        min-width: 80%;
+        margin: auto;
+    }
+    .buttons{
+        min-width: 30%;
+        margin: auto;
+    }
+}
+@media (max-width:768px){
+    .item-1{
+        min-width: 100%;
+    }
+    .buttons{
+        min-width: 50%;
+        margin: auto;
+    }
+    .info{
+        margin: 0 0 10% 0;
+    }
+}
+@media (max-width:425px){
+    .item-2{
+        min-width: 80%;
+    }
+    .guarantees{
+        min-width: 100%;
+    }
+    .guarantee{
+        min-width: 40%;
+    }
+    .info{
+        margin: 0;
+    }
+}
+@media (max-width:375px){
+    .info{
+        margin: 0;
+    }
+    .buttons{
+        min-width: 80%;
+    }
+    .poly-name, .poly-price{
+        font-size: 15px!important; 
+    }
+}
